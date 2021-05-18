@@ -1,0 +1,20 @@
+#MoreBlock {
+  text-align: left;
+  .more-list-row {
+    //justify-content: flex-start;
+    text-align: left;
+    a {
+      color: #909090;
+      font-size: 12px;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+  img {
+    width: 25px;
+    height: 25px;
+    //margin-right: 12px;
+    margin: 12px 12px 0 0;
+  }
+}

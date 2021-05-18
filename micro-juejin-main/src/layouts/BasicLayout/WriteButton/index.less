@@ -1,0 +1,17 @@
+.WriteButton_wrapper {
+  transition: width 0.5s;
+  .ease_fade-enter,
+  .ease_fade-leave-to {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .ease_fade-enter-active,
+  .ease_fade-leave-active {
+    transition: all 0.5s ease;
+  }
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

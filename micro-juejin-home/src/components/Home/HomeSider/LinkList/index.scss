@@ -1,0 +1,17 @@
+.LinkList {
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  margin-bottom: 16px;
+  a {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    color: #2c3e50;
+    .icon {
+      margin-right: 8px;
+      height: 37px;
+      width: 37px;
+    }
+  }
+}

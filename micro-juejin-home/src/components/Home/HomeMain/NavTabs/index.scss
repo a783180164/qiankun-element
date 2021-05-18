@@ -1,0 +1,28 @@
+#NavTabs {
+  background: #fff;
+  padding: 8px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(110, 110, 110, 0.1);
+  .NavTab_btn {
+    color: #909090;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 1px;
+      height: 16px;
+      background: #e3e3e3;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .active_tab {
+    color: $primaryColor;
+  }
+}

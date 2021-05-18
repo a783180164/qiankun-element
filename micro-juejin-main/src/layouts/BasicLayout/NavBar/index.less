@@ -1,0 +1,50 @@
+#NavBar {
+  //transition: top 0.5s cubic-bezier(0.65, -1.51, 0.41, 2.43), opacity 0.5s;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  background: #fff;
+  width: 100vw;
+  border-top: 1px solid #e3e3e3;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  //height: 46px;
+  line-height: 46px;
+  position: fixed;
+  z-index: 1;
+  //top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  .NavBar_container {
+    display: flex;
+    width: 960px;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    .nav_list {
+      display: flex;
+      min-width: max-content;
+      .nav_list-item {
+        padding: 0 16px;
+        font-size: 14px;
+        color: #71777c;
+        cursor: pointer;
+        min-width: max-content;
+        &:hover {
+          color: #007fff;
+        }
+      }
+    }
+    .action_box {
+      cursor: pointer;
+      color: #2c3e50;
+      .link_btn {
+        color: #2c3e50;
+        &:hover {
+          color: #007fff;
+        }
+      }
+      // min-width: 100px;
+      // background-color: #dc0816;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.BasicLayout_container {
+  //background: #42b983;
+  transition: all 0.5s ease;
+  //min-height: 100%;
+  //max-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  .BasicLayout_header {
+    background: #fff;
+    box-shadow: 0 3px 3px rgba(110, 110, 110, 0.15);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    transform-origin: top;
+    .BasicLayout_header_container {
+      display: flex;
+      width: 960px;
+      justify-content: space-between;
+    }
+
+    .header_menu-wrapper {
+      min-width: 130px;
+      display: flex;
+
+      .header_menu {
+        line-height: 64px;
+      }
+      .header_menu-img {
+        cursor: pointer;
+        margin-right: 12px;
+      }
+    }
+    .header_menu-title {
+      font-size: 16px;
+    }
+    .header_right-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      max-width: 520px;
+    }
+  }
+
+  .BasicLayout_content {
+    padding: 64px 0 0;
+    margin: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    .BasicLayout_loading {
+      position: absolute;
+      height: 36px;
+      width: 150px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      //top: 45vh;
+      //left: 45vw;
+    }
+    #subApp {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .BasicLayout_footer {
+    text-align: center;
+    padding: 4px;
+    background: rgba(0, 127, 255, 0.09);
+    //box-shadow: 0 -12px 12px rgba(218, 231, 246);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .BasicLayout_container {
+    height: 100%;
+  }
+}
+
+/*transition相关*/
+.ease_fade-enter,
+.ease_fade-leave-to {
+  opacity: 0;
+}
+
+.menu_fade-enter,
+.menu_fade-leave-to {
+  opacity: 0;
+  transform: perspective(500px) translateZ(100px);
+}
+
+.head_fade-enter,
+.head_fade-leave-to {
+  //transform: rotateX(90deg) perspective(100px) translateZ(50px);
+  opacity: 0;
+  transform: translateY(-63px);
+}
+
+.head_fade-enter-active,
+.head_fade-leave-active {
+  //transition: transform 0.5s cubic-bezier(0.65, -1.51, 0.41, 2.43), opacity 0.5s;
+  transition: transform 0.5s ease, opacity 0.5s;
+}
+
+.menu_fade-enter-active,
+.menu_fade-leave-active {
+  transition: all 0.3s cubic-bezier(0.54, 0.05, 0.29, 2);
+}
+
+.subApp_fade-enter,
+.subApp_fade-leave-to {
+  opacity: 0;
+  transform: perspective(500px) translateZ(-100px);
+}
+.subApp_fade-enter-active,
+.subApp_fade-leave-active {
+  transition: all 0.5s cubic-bezier(0.54, 0.05, 0.29, 1);
+  //transition: all 0.1s ease;
+}

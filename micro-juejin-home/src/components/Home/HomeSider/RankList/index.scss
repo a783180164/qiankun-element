@@ -1,0 +1,58 @@
+.RankList {
+  width: 240px;
+  height: 293px;
+  background: #fff;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  .RankList_header {
+    height: 42px;
+    border-bottom: 1px solid #f3f3f3;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 16px;
+  }
+  .RankList_content {
+    flex: 1;
+    border-bottom: 1px solid #f3f3f3;
+    text-align: left;
+    .RankList_content-item {
+      flex: 1;
+      display: flex;
+      padding: 8px 16px;
+      &:hover {
+        background: #fafafa;
+      }
+      img {
+        height: 46px;
+        width: 46px;
+        margin-right: 8px;
+      }
+      .RankList_content-right {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .RankList_content-name {
+          .RankList_content-level {
+            margin-left: 8px;
+            width: 23px;
+            height: 14px;
+            display: inline-block;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .RankList_content-position {
+          color: #909090;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .RankList_footer {
+    height: 42px;
+    line-height: 42px;
+  }
+}
