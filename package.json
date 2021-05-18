@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "node config/install.js",
+    "cinit": "node config/install.js cnpm",
+    "serve": "node config/start.js",
+    "build": "node config/build.js",
+    "lint": "vue-cli-service lint",
+    "start": "cd ./home"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lib-flexible": "^0.3.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "vant": "^3.0.15",
+    "vue-types": "^2.0.3"
+  }
+}
